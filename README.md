@@ -32,7 +32,3 @@
 4. 필요 시 참고 자료 링크 첨부
 
 ---
-
-## 📆 기록 현황
-- 2025-09-09: `CS/Network.md` 생성 - OSI 7계층 정리
-- 2025-09-10: `Java/Collection.md` 생성 - List, Set, Map 차이
