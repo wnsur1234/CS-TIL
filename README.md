@@ -8,27 +8,23 @@
 ## 🗂️ 분류
 
 ### CS
-- [운영체제(OS)](CS/OS.md)
-- [네트워크(Network)](CS/Network.md)
-- [데이터베이스(DB)](CS/DB.md)
-- [자료구조 & 알고리즘](CS/DataStructure.md)
+- [운영체제(OS)](TIL-Contents/OS/os.md)
+- [네트워크(Network)](TIL-Contents/Networks/network.md)
+- [데이터베이스(DB)](TIL-Contents/Databases/db.md)
+- [자료구조](TIL-Contents/Data_Structures/dataStructures.md)
+- [알고리즘](TIL-Contents/Algorithms/algorithms.md)
 
-### Java
-- [JVM](Java/JVM.md)
-- [컬렉션(Collection)](Java/Collection.md)
-- [스트림(Stream)](Java/Stream.md)
+### Java & Spring
+- [자바](TIL-Contents/Java/java.md)
+- [스프링](TIL-Contents/Java/spring.md)
 
-### Spring
-- [스프링 기본](Spring/Core.md)
-- [JPA](Spring/JPA.md)
-- [Spring Security](Spring/Security.md)
 
 ---
 
 ## ✍ 작성 규칙
 1. 하루 최소 1개 이상 학습 기록
 2. 짧아도 좋으니 **내 언어로 요약**
-3. 폴더별로 주제 정리 (CS / Java / Spring ...)
+3. 폴더별로 주제 정리
 4. 필요 시 참고 자료 링크 첨부
 
 ---
