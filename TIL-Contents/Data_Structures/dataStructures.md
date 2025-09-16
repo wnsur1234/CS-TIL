@@ -209,10 +209,12 @@ while (!q.isEmpty()) {
 
 ---
 ### 다음 학습 계획
+* [자료구조심화학습](./dataStructure_nextStep.md)
+
 - 해시 심화: 해시 함수/로드 팩터/체이닝 vs 오픈 어드레싱, hashCode()/equals() 규약
+- Heap에 대하여
 - Tree: BST 불균형 문제, Red-Black/AVL 회전, Heap 응용(상위 K, 다중 병합)
 - Graph: BFS/DFS 구현 숙달, 최단경로(다익스트라), 위상정렬, 최소신장트리(Kruskal/Prim)
-
 ---
 ### 모의면접 진행 
 
