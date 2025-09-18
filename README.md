@@ -6,25 +6,20 @@
 ---
 
 ## 🗂️ 분류
-
 ### CS
-- [운영체제(OS)](TIL-Contents/OS/os.md)
-- [네트워크(Network)](TIL-Contents/Networks/network.md)
-- [데이터베이스(DB)](TIL-Contents/Databases/db.md)
 - [자료구조](TIL-Contents/Data_Structures/dataStructures.md)
 - [알고리즘](TIL-Contents/Algorithms/algorithms.md)
+- [네트워크(Network)](TIL-Contents/Networks/network.md)
+- [운영체제(OS)](TIL-Contents/OS/os.md)
+- [데이터베이스(DB)](TIL-Contents/Databases/db.md)
 
 ### Java & Spring
 - [자바](TIL-Contents/Java/java.md)
 - [스프링](TIL-Contents/Java/spring.md)
-
-
 ---
-
 ## ✍ 작성 규칙
 1. 하루 최소 1개 이상 학습 기록
 2. 짧아도 좋으니 **내 언어로 요약**
 3. 폴더별로 주제 정리
 4. 필요 시 참고 자료 링크 첨부
-
 ---
