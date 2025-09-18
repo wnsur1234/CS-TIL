@@ -7,8 +7,8 @@
 
 ## 🗂️ 분류
 ### CS
-- [자료구조](TIL-Contents/Data_Structures/dataStructures.md)
-- [알고리즘](TIL-Contents/Algorithms/algorithms.md)
+- [자료구조(Data Structure)](TIL-Contents/Data_Structures/dataStructures.md)
+- [알고리즘(Algorithm)](TIL-Contents/Algorithms/algorithms.md)
 - [네트워크(Network)](TIL-Contents/Networks/network.md)
 - [운영체제(OS)](TIL-Contents/OS/os.md)
 - [데이터베이스(DB)](TIL-Contents/Databases/db.md)
