@@ -15,7 +15,7 @@
 
 ### Java & Spring
 - [자바](TIL-Contents/Java/java.md)
-- [스프링](TIL-Contents/Java/spring.md)
+- [스프링](TIL-Contents/Java/spring/login.md)
 ---
 ## ✍ 작성 규칙
 1. 하루 최소 1개 이상 학습 기록

@@ -14,6 +14,16 @@
 ```
 그에 반해 (로그인/인증) 여기서 여러가지로 방식이 나뉜다.
 *핵심 개념은 "로그인 후, 서버가 사용자의 인증 상태를 어떻게 유지할 것인가?" 이다.
+
+### 용어 정리
+### 인증(Authentication) vs 인가(Authorization)
+
+| 구분 | 인증(Authentication) | 인가(Authorization / 권한) |
+|------|----------------------|-----------------------------|
+| 의미 | "누구냐" (로그인)     | "무엇을 할 수 있냐" (접근 권한) |
+| 예시 | 로그인 성공 → 사용자 확인 | 관리자만 삭제 가능 같은 정책 |
+| 관련 기술 | 로그인, JWT 발급 | 권한 체크, 역할(Role) 판별 |
+
 ---
 ### [로그인/인증 방식]
 > :arrow_double_up:[Top](#회원가입로그인-기본-흐름)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
@@ -35,7 +45,8 @@
 
 ### session
 > :arrow_double_up:[Top](#회원가입로그인-기본-흐름)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
+* [▶️답변내용](https://github.com/wnsur1234/CS-TIL/Java/spring/security_basic.md)
 
-
-
-
+### JWT
+> :arrow_double_up:[Top](#회원가입로그인-기본-흐름)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
+* [▶️답변내용](https://github.com/wnsur1234/CS-TIL/Java/spring/jwt_quthentication.md)
