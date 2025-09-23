@@ -45,7 +45,7 @@
 
 ### session
 > :arrow_double_up:[Top](#회원가입로그인-기본-흐름)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
-* [▶️답변내용](https://github.com/wnsur1234/CS-TIL/blob/main/TIL-Contents/Java/spring/security_basic.md)
+* [▶️답변내용](./security_basic.md)
 
 ### JWT
 > :arrow_double_up:[Top](#회원가입로그인-기본-흐름)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
