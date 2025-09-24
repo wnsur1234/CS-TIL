@@ -45,6 +45,8 @@ public interface RefreshTokenRepository extends JpaRepository<RefreshToken, Long
 각 accessToken과 refreshToken을 생성하고
 
 refreshToken을 컨트롤러에서 받아오면 검증을 하는 로직을 가지고 있습니다.
+또한,getUsername()은 subject를 가져오는 거라 사실상 **사용자 식별자(email)**를 리턴하는 메서드
+isExpired()는 단순 만료 체크뿐만 아니라, ExpiredJwtException을 잡아서 true로 처리하는 로직이 들어가 있으니, 만료 토큰을 잡아내는 핵심 메서드의 역할들도 합니다.
 ```
 private final SecretKey secretKey;
     private final long accessTokenExpiration;
@@ -99,7 +101,7 @@ private final SecretKey secretKey;
 ```
 ### 4. JwtAuthenticationFilter
 역할 : 로그인 시 AccessToken + RefreshToken 발급을 합니다.
-Authentication, 즉 말그대로 인가(권한)을 부여하는 것으로
+Authentication, 즉 말그대로 인증을 하는 단계로
 로그인이 성공하였을 시 권한토큰을 발급하는 역할을 합니다.
 ```
 private final AuthenticationManager authenticationManager;
@@ -140,8 +142,9 @@ private final AuthenticationManager authenticationManager;
     }
 ```
 ### 5. JwtAuthorizationFilter
-역할 : Authroization, 즉 인증이므로 로그인 시도 하였을 시 해당 유저가
-존재하는 지에 대한 인증을 합니다.
+역할 : Authroization, 즉 인가(권한)이므로 
+절차를 위해 토큰을 검증하고, SecurityContext에 사용자 정보를 등록 하는 역할을 합니다.
+앞선 인증자체는 이미 로그인 단계에서 끝났고, 요청이 올때마다 토큰을 확인해 사용자 권한을 부여하는 과정입니다.
 ```
  private final JWTUtil jwtUtil;
     private final UserDetailsServiceImpl userDetailsService;
@@ -178,6 +181,7 @@ private final AuthenticationManager authenticationManager;
 ### 6. SecurityConfig 연결
 역할 : 기본은 security역할을 하는것으로 각 엔드포인트에대한 보안을 설정하고
 비밀번호 암호화하는 등 여러가지 역할을 하는데, 여기에 `앞서만든 filter들을 연결해줍니다.`
+따라서 .addFilterBefore()을 통해 모든 요청에 대해 토큰 검증을 로그인 인증 필터보다 우선 처리하기 위함입니다.
 
 ```
  private final JWTUtil jwtUtil;
