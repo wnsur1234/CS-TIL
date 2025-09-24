@@ -1,3 +1,9 @@
+* [들어가기](#jwt-란)
+* [구조](#jwt-구조)
+* [Signauture](#signature서명)
+* [장점/단점](#jwt의-장점과-단점-고려사항)
+* [RefreshToken](#refresh-token)
+
 ### JWT 란?
 >Json 포맷을 이용하여 사용자에 대한 속성을 저장하는  Claim 기반의 Web Token.
 JWT는 토큰 자체를 정보로 사용하는 Self-Contained 방식으로 정보를 안전하게 전달한다.
@@ -94,4 +100,10 @@ Sginature를 해싱하기 위한 `알고리즘을 지정` 하는 것이다.
     - (Access Token이 탈취당하더라도 유효기간이 짧아 사용할 수 있는 기간이 줄어들어 탈취방지 효과)
 - Access 토큰의 유효기간이 짧음에도 불구하고 Refresh Token이 만료될때까지 `추가적인 로그인을 하지 않아도 됨`
     - 마치 Session(세션)이 유지되는 것 같은 효과가 있음
-      
+---
+
+### 구현하기
+* [▶️답변내용](./jwt_practice.md)
+
+
+
