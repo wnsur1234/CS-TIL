@@ -3,6 +3,8 @@
 * [Signauture](#signature서명)
 * [장점/단점](#jwt의-장점과-단점-고려사항)
 * [RefreshToken](#refresh-token)
+* [구현](#구현하기)
+* [로그아웃](#로그아웃)
 
 ### JWT 란?
 >Json 포맷을 이용하여 사용자에 대한 속성을 저장하는  Claim 기반의 Web Token.
@@ -105,5 +107,7 @@ Sginature를 해싱하기 위한 `알고리즘을 지정` 하는 것이다.
 ### 구현하기
 * [▶️답변내용](./jwt_practice.md)
 
-
+---
+### 로그아웃
+* 출처 : https://upcurvewave.tistory.com/611
 
