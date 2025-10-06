@@ -5,6 +5,7 @@
     - [SSE](#1-1-3-서버-센트-이벤트server-sent-event)
 * [웹소켓](#그렇다면-웹소켓이란)
 * [한계](#웹-소켓web-socket의-한계점)
+* [웹소켓의 실제 활용](#websocket의-실제-활용-방식)
 
 ### 들어가기
 ## 1. 웹소켓의 등장배경
@@ -192,3 +193,13 @@ Sec-WebSocket-Accept: hsBYongNyong24s99EO10UlZ22C2g=
 // TODO 
 TCP의 정확한 개념 알아보기 
 지금은 인터넷 연결을 하는데 신뢰할 수 있는? 연결을 보장해준다?!정도
+
+---
+### WebSocket의 실제 활용 방식
+
+1. 단순 WebSocket 활용
+
+2. Stomp방식의 연결
+* [실습](./webSocket_stomp.md)
+
+3. Redis or Kafka 방식의 연결
