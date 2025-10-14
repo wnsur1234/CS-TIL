@@ -257,4 +257,4 @@ private final JWTUtil jwtUtil;
 
 이렇게 하면 정상적으로 로그인 시도 시 AccessToken과 RefreshToken을 발급 받는 
 Jwt 인증 방식이 구현 됩니다.
-![alt text](image-2.png)
+![alt text](../../a_images/jwt_practice.png)

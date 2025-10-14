@@ -28,7 +28,7 @@
 > <u>그렇다면, 웹소켓이 등장하기 전 HTTP 프로토콜 기반 실시간 통신 방식은 어떤게 있었을까??</u>
 
 ### 1-1-1. 폴링(Polling)
-![alt text](image-3.png)
+![alt text](../../a_images/websocket_polling.png)
 > 클라이언트가 주기적으로 서버에 요청을 보내는 방식
 `즉, 일정 시간을 정해 놓고 새로운 데이터가 있는지 요청을 보내 확인`
 
@@ -58,7 +58,7 @@ app.get('/server', function(req, res){
 ---
 
 ### 1.1.2 롤 폴링(Long Polling)
-![alt text](image-38.png)
+![alt text](../../a_images/websocket_longPolling.png)
 > 롤 폴링이란 폴리에서 `조금 더 개선된 방식`으로
 동일하게 클라이언트는 서버에게 요청을 보내지만
 서버는 새로운 데이터가 없다면 일정 시간동안 응답을 하지 않고 새로운 데이터가 있을 때까지 기다린다.
@@ -72,7 +72,7 @@ app.get('/server', function(req, res){
 ---
 
 ### 1-1-3 서버 센트 이벤트(Server-Sent Event)
-![alt text](image-39.png)
+![alt text](../../a_images/websocket_server-sentEvent.png)
 > 서버센트 이벤트 방식은 앞서 말한 폴링관련 방식과는 다르게 동작하는데
 클라이언트는 `최초로 한 번 서버에 연결을 요청`합니다.
 그럼 서버는 요청을 받고, 이후 `새로운 데이터가 생길 때마다 적절히 처리하여 클라이언트에게 응답`
@@ -109,7 +109,7 @@ app.get('/server', function(req, res){
 ---
 
 ## 2. 그렇다면 웹소켓이란???
-![alt text](image-40.png)
+![alt text](../../a_images/websocket_websocket.png)
 > 웹 소켓은 `HTML5`에 등장 실시간 웹 애플리케이션을 위해 설계된 통신 프로토콜이며,
 `TCP(Transmission Control Protocal)을 기반`으로 한다.
 TCP를 기반으로 한 웹소켓은 신뢰성 있는 데이터 전송을 보장하며, 메세지 경계를 존중하고,

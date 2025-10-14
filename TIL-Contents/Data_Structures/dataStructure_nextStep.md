@@ -43,11 +43,11 @@
 - 해시 테이블(Hash table)은 키와 값을 함께 저장해 둔 데이터 구조입니다. 
 이는 데이터가 행과 열로 구성된 표에 저장되는 것과 유사합니다. 
 테이블에 데이터를 저장할 때 위치는 무작위로 지정되어 작성됩니다. 따라서 중간에 여유 공간이 발생할 수 있습니다.
-![alt text](image-1.png)
+![alt text](../a_images/hash_table.png)
 
 3) 해싱(Hashing)
 해싱은 해시 함수에서 해시를 출력하고, 해시 테이블에 저장하는 과정까지의 행위를 말합니다.
-![alt text](image-2.png)
+![alt text](../a_images/hasing.png)
 
 ### 해시 자료구조의 장, 단점과 용도
 > :arrow_double_up:[Top](#자료구조-심화-학습-내용)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
@@ -226,7 +226,7 @@ public class Main {
 ### 들어가기전...
 - 우선순위 큐: 우선순위의 개념을 큐에 도입한 자료 구조
     - 데이터들이 우선순위를 가지고 있고 우선순위가 높은 데이터가 먼저 나간다.
-    - ![alt text](image-4.png)
+    - ![alt text](../a_images/priorityQueue_1.png)
     - 우선순위 큐의 이용 사례
         a. 시뮬레이션 시스템
         b. 네트워크 트래픽 제어
@@ -234,7 +234,7 @@ public class Main {
         d. 수치 해석적인 계산
     - 우선순위 큐는 배열, 연결리스트, 힙 으로 구현이 가능하다. 
       이 중에서 힙(heap)으로 구현하는 것이 가장 효율적이다.
-    - ![alt text](image-5.png)
+    - ![alt text](../a_images/priorityQueue_2.png)
 
 ### 힙(Heap) 이란?
 > :arrow_double_up:[Top](#자료구조-심화-학습-내용)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
@@ -247,7 +247,7 @@ public class Main {
 
 ### 완전 이진 트리란?
 > 이진 트리에 노드를 삽입할 때 왼쪽부터 차례대로 삽입하는 트리이다.
-![alt text](image-3.png)
+![alt text](../a_images/tree.png)
 (출처: https://heytech.tistory.com/105)
 
 ### 힙의 종류
@@ -277,7 +277,7 @@ public class Main {
     - 왼쪽 자식 노드 < 부모 노드 < 오른쪽 자식 노드
     - 힙은 왼쪽 노드의 값이 크든 오른쪽 노드의 값이 크든 상관 없다.
     - 힙은 최대/최소 검색을, 이진 탐색 트리는 탐색을 위한 구조이다.
-![alt text](image-6.png)
+![alt text](../a_images/BinarySearchTree.png)
 
 ### Heap을 공부하며 생긴 의문
 > :arrow_double_up:[Top](#자료구조-심화-학습-내용)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
