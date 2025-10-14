@@ -14,8 +14,12 @@
 - [데이터베이스(DB)](TIL-Contents/Databases/db.md)
 
 ### Java & Spring
-- [자바](TIL-Contents/Java/java.md)
-- [스프링](TIL-Contents/Java/spring/login.md)
+- [자바]
+- [Gmail]
+  - [시간복잡도 질문](TIL-Contents/Java/Gmail_question/time_complexity.md)
+- [스프링]
+  - [JPA]
+    - [N+1](TIL-Contents/Java/spring/JPA/n+1.md)
   - [JWT]
     - [JWT_이론](TIL-Contents/Java/spring/jwt_theory.md)
     - [JWT_실습](TIL-Contents/Java/spring/jwt_pratice.md)
