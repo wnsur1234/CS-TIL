@@ -202,4 +202,9 @@ VPC 흐름로그
 - 블록 스토리지
 - 파일스토리지 
 - 객체 스토리지
+
 ![alt text](../a_images/stroage_type.png)
+
+
+### 로드 밸런서 
+[보충자료]![alt text](../a_images/loadBalance.png)
