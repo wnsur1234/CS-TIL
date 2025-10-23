@@ -60,7 +60,7 @@ DCs'' < Location Zone
 - 최대 10GB 메모리 지원
 - 이벤트 트리거 기능이 있음 (제한된 서비스에대해서)
 
-![alt text](image-1.png)
+![alt text](../a_images/chaining_security.png)
 
 ---
 
