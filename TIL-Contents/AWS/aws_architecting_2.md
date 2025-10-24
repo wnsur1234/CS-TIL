@@ -357,6 +357,13 @@ Oraganizations란 여러 AWS 계정을 하나의 그룹(조직)으로 묶어서 
 예측 크기 조정과 동적 크기 조정(각각 사전 및 사후 접근 방식)을 결합하여 더 빠르게 EC2 용량의 규모를 조정할 수 있습니다. 예측 크기 조정을 사용하여 트래픽 흐름의 일별 및 주별 패턴에 앞서 Auto Scaling 그룹의 EC2 인스턴스 수를 늘립니다
 
 -> 이후에 CloudWatch 모듈7 처음부분으로
+### CloudWatch의 경보
+
+[추가장표]
+
+![alt text](../a_images/cloudWatch_eventBridge.png)
+![alt text](../a_images/cloudWatch_eventBridge_2.png)
+---
 
 // TODO : 주말 10/26일 일요일 까지 스토리지 ~ 모니터링 및 크기조정 모듈[5~7] 까지 좀 더 자세히 공부 후 실습 3,4 완료 하기 
 예상 소요 시간 : 진짜 집중하면 2시간? + 실습 30분? -> 아니면 약 3시간 정도 예상
