@@ -64,4 +64,34 @@ Boto3 라이브러리는 Botocore를 기반으로 합니다. AWS 명령줄 호�
 
 - 서비스 작업
     - JSON 형태로 진행이됨
-- 비동기식 작업
+- 비동기식 작업 : 요청 바로 진행
+    - 동기식으로도 진행이 됨 : 요청 끝날때까지 기다림 -> 보통은 동기식으로 진행
+
+### 통합 개발 환경 (IDE)
+> IDE 도구 키트
+
+- Eclipse 
+- Rider
+- WebStorm
+- Visual Studio Code
+- Intellij
+- Azure DevOps
+등등등
+
+-> 이런 툴들을 사용하여 AwS 를 사용해 애플리케이션의 생성, 배포, 디버깅이 쉬워짐
+
+---
+
+### Amazon Q
+> 생성형  AI 기반 어시스턴트
+
+- 소프트웨어 개발 수명 주기 (SDLC)를 전체적으로 지원
+    - 계획
+    - 생성
+    - 테스트 및 보안
+    - 운영
+    - 유지 관리 및 현대화
+
+### 권한 부여
+
+![alt text](../a_images/aws_role_give.png)
