@@ -16,7 +16,15 @@
 ---
 
 ### AWS
-- [AWS(Amazon Webs Service)](TIL-Contents/AWS/aws_theory.md)
+- [ThechinicalEssesntial]
+  - [1일차] (./TIL-Contents/AWS/thechinicalEssential/aws_thechnical_essential.md)
+- [Architecting]
+  - [1일차](./TIL-Contents/AWS/Architecting/aws_architecting.md)
+  - [2일차](./TIL-Contents/AWS/Architecting/aws_architecting_2.md)
+  - [3일차](./TIL-Contents/AWS/Architecting/aws_architecting_3.md)
+- [Developing]
+  - [1일차](./TIL-Contents/AWS/developing/aws_developing.md)
+  - [2일차](./TIL-Contents/AWS/developing/aws_developing_2.md)
 
 --- 
 
