@@ -17,7 +17,7 @@
 
 ### AWS
 - [ThechinicalEssesntial]
-  - [1일차] (./TIL-Contents/AWS/thechinicalEssential/aws_thechnical_essential.md)
+  - [1일차](./TIL-Contents/AWS/thechinicalEssential/aws_thechnical_essential.md)
 - [Architecting]
   - [1일차](./TIL-Contents/AWS/Architecting/aws_architecting.md)
   - [2일차](./TIL-Contents/AWS/Architecting/aws_architecting_2.md)
