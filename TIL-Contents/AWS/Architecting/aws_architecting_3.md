@@ -7,7 +7,7 @@
 CloudFormation은 위처럼 YAML 또는 JSON으로 작성된 템플릿 파일을 읽어서
 EC2, S3, RDS 등 AWS 리소스 전체를 자동으로 생성·삭제·관리해줍니다.
 
-![alt text](../a_images/cloudFormation.png)
+![alt text](../../a_images/cloudFormation.png)
 
 [템플릿(포멧)]
 
@@ -17,7 +17,7 @@ EC2, S3, RDS 등 AWS 리소스 전체를 자동으로 생성·삭제·관리해�
     - 코드 검토
     - 버전 제어
 
-![alt text](../a_images/cloudFromation_template.png)
+![alt text](../../a_images/cloudFromation_template.png)
 
 ### 인프라(Infrastructure)
 > 서비스가 돌아가기 위한 기반 시스템
@@ -76,7 +76,7 @@ MSA 환경으로 올릴 수 있다는것을 배움
 ### 마이크로 서비스
 > 얘는 보니까 MSA 말하는 듯
 
-![alt text](../a_images/microService.png)
+![alt text](../../a_images/microService.png)
 
 ### 컨테이너
 > 결국 얘는 애플리케이션임
@@ -89,13 +89,13 @@ MSA 환경으로 올릴 수 있다는것을 배움
 - 확장성
 
 ### 가상화 및 추상화 수준
-![alt text](../a_images/container_st.png)
+![alt text](../../a_images/container_st.png)
 
 
 ### 컨테이너 서비스
 > AWS에 존재하는 컨테이너 서비스 종류들
 
-![alt text](../a_images/container_services.png)
+![alt text](../../a_images/container_services.png)
 
 - `각 기능들 확인 해봐야함` | 근데 각 내용이 매우 많은 듯 EKS같은 경우에는 3일짜리 강의도 있다함
 - 여기서는 이런 서비스가 있다 정도만 설명한다.
@@ -111,7 +111,7 @@ AWS도 이런게 있다를 소개하는 정도
 ### 네트워킹2 [모듈10]
 > 여기서는 프라이빗 통신을 해야할 때 어떤 서비스를 사용할 수 있는지를 배우는 모듈
 
-![alt text](../a_images/network_2_insite.png)
+![alt text](../../a_images/network_2_insite.png)
 
 -> 네트워킹2를 들어가기전 이전 네트워크를 배운 내용과 + 앞으로 배울 내용을 한번 정리한 내용
 
@@ -143,7 +143,7 @@ AWS도 이런게 있다를 소개하는 정도
 그러나 둘의 차이점은 단순히 연결 방식의 차이가 있는 것이고
 비용,속도,보안,규모가 다르기 때문이다. 더 큰 기업일 수록 DC가 필요
 
-![alt text](../a_images/vpn_or_directConnect.png)
+![alt text](../../a_images/vpn_or_directConnect.png)
 
 
 | 구분            | **VPN (Virtual Private Network)** | **Direct Connect (DC)**           |
@@ -165,7 +165,7 @@ AWS도 이런게 있다를 소개하는 정도
 * 참고 : IP 공간은 중복 될 수 없음
 
 ### 다중 VPC 피어링 연결
-![alt text](../a_images/multi_vpc_piaring.png)
+![alt text](../../a_images/multi_vpc_piaring.png)
 
 > VPC를 중개역할로 다른 VPC랑 연결을 지원하지 않기 때문에 VPC의 수가 많아지면 
 역려하는게 힘들기 때문에 
@@ -221,7 +221,7 @@ AWS도 이런게 있다를 소개하는 정도
 - 내장된 보안,고가용성 컴퓨팅
 
 ### 서버리스 각 서비스 별 종류
-![alt text](../a_images/serveless_category.png)
+![alt text](../../a_images/serveless_category.png)
 
 - API GateWay
 - Amazon SQS : 메세지 비동기 처리
@@ -243,7 +243,7 @@ AWS도 이런게 있다를 소개하는 정도
 ### API Gateway 아키텍쳐
 
 ### Amazone SQS
-![alt text](../a_images/sqs.png)
+![alt text](../../a_images/sqs.png)
 
 # 여기 까지 [실습5]가 진행되어야함 어제는 실습2까지 했음
 
@@ -267,7 +267,7 @@ AWS도 이런게 있다를 소개하는 정도
 
 [그림]
 
-![alt text](../a_images/edge_arch.png)
+![alt text](../../a_images/edge_arch.png)
 
 ### Amazon Rout 53
 > 사용자가 모든 IP를 다룰 수 없을 때 
@@ -277,7 +277,7 @@ AWS에서는 이 DNS를 관리하는게 Rout53
 -> 그래서 DNS가 뭔데
 
 ### Rout 53 퍼블릭 및 프라이빗 DNS
-![alt text](../a_images/rout53_Dns.png)
+![alt text](../../a_images/rout53_Dns.png)
 
 ### 라우팅 정책
 - 단순 : IP 개수가 정해져있고 그걸 순차적으로 단순히 돌아가면서 제공
@@ -302,7 +302,7 @@ AWS에서는 이 DNS를 관리하는게 Rout53
 - 엣지 로케이션에서 데이터를 캐시하여 지연 시간 단축
 - 보안 강화
 
-![alt text](../a_images/edge_caching.png)
+![alt text](../../a_images/edge_caching.png)
 
 ### CloudFront 캐싱
 > 엣지 캐싱과 동일
@@ -319,7 +319,7 @@ AWS에서는 이 DNS를 관리하는게 Rout53
 `이런 공격이 있는데 이걸 어떻게 완화할 수 있냐를 AWS어떻게 적용하는지 알아보는것`
 
 [복원력 참조 아키텍쳐]
-![alt text](../a_images/DDos_backup_arch.png)
+![alt text](../../a_images/DDos_backup_arch.png)
 
 [추가]
 ELB를 통해서도 DDos 공격을 막을 수 있음
@@ -332,7 +332,7 @@ ELB를 통해서도 DDos 공격을 막을 수 있음
     - AWS Shield Standard -> 무료
     - AWS Shield Advanced -> 좀 비쌈(상시로 방어해줌)
 
-![alt text](../a_images/AWS_Shield.png)
+![alt text](../../a_images/AWS_Shield.png)
 
 ### AWS WAF
 > AWS 웹애플리케이션 전용 방화벽 서비스
@@ -353,7 +353,7 @@ ELB를 통해서도 DDos 공격을 막을 수 있음
 
 그림으로 표현하자면 
 
-![alt text](../a_images/AWS_Outposts.png)
+![alt text](../../a_images/AWS_Outposts.png)
 
 -> 사실상 이렇게 했을 때 AWS의 모든 서비스를 사용할 수는 없음
 제한적인 목록의 것들만 사용할 수 있음
@@ -387,7 +387,7 @@ ELB를 통해서도 DDos 공격을 막을 수 있음
 - 리전 장애 조치를 계획  합니다.
 
 ### RPO(복구 시점 목표) 및 RTO(복구 시간 목표)
-![alt text](../a_images/RTO와%20RPO.png)
+![alt text](../../a_images/RTO와%20RPO.png)
 
 ### 재해 복구에 필수적인 AWS 서비스
 - 스토리지

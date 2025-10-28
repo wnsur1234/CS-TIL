@@ -42,7 +42,7 @@ ex) 데이터 센터나 사무실 안에 직접 서버를 구매하여 설치하
 
 ### AWS의 다양한 서비스
 > 클라우드 컴퓨팅 서비스중 AWS는 광범위한 서비스를 제공해준다.
-![alt text](../a_images/aws_service.png)
+![alt text](../../a_images/aws_service.png)
 
 ---
 
@@ -50,7 +50,7 @@ ex) 데이터 센터나 사무실 안에 직접 서버를 구매하여 설치하
 > 데이터 센터, 네트워킹 연결 등의 인프라는 모든 클라우드 애플리케이션의 기초가 되는요소입니다. 이러한 물리적 인프라로 구성되어 있는 AWS의 인프라가 AWS Global Infrastructure입니다. 여기에는 `리전,가용 영역, 엣지 로케이션이` 포함됩니다.
 
 ### 보충자료
-![alt text](../a_images/data_center_image.png)
+![alt text](../../a_images/data_center_image.png)
 
 
 ### 배포시 리전 선택
@@ -78,12 +78,12 @@ DNS -> Route53
 ### 공동 책임 모델 다이어그램
 > 고객이 AWS 제품 및 서비스를 사용할 때 보안을 책임지는 주체는
 AWS회사와 고객 둘다인데 관련하여 아래 사진을 참고 하면 좋을것 같다.
-![alt text](../a_images/Aws_component_diagram.png)
+![alt text](../../a_images/Aws_component_diagram.png)
 
 ---
 
 ### IAM(AWS Identiy and Access Management)
-* [참고]![alt text](../a_images/introduce_IAM.png)
+* [참고]![alt text](../../a_images/introduce_IAM.png)
 * IAM은 앞서 말한 공동 책임 모델 다이어그램을 통해 알 수 있듯 책임을 나눠야하기 때문에 존재
 
 ### IAM 기능
@@ -94,11 +94,11 @@ AWS회사와 고객 둘다인데 관련하여 아래 사진을 참고 하면 좋
 - 자격 증명 연동
 - 무료로 사용
 
-![alt text](../a_images/IAM_ability.png)
+![alt text](../../a_images/IAM_ability.png)
 
 
 ### IAM 역할
-![alt text](../a_images/IAM_role.png)
+![alt text](../../a_images/IAM_role.png)
 
 ---
 ### AWS 컴퓨팅 서비스
@@ -143,10 +143,10 @@ ex) 컨테이너에서의 이미지
 - 메모리 최적화 : 인스턴스는 메모리에서 대규모 데이터 집합을 처리하는 워크로드를 위한 빠른 성능을 제공합니다. 이러한 인스턴스는 고성능 데이터베이스, 웹 규모의 분산 인 메모리 캐시, 실시간 빅 데이터 분석 등의 메모리 집약적인 애플리케이션에 사용됩니다.
 - 가속 컴퓨팅 : 인스턴스는 하드웨어 액셀러레이터 또는 코프로세서(coprocessor)를 사용하여 부동 소수점 수 계산이나 그래픽 처리,데이터 패턴 일치 등의 기능을 기존 CPU를 사용할 때보다 더 효율적으로 수행합니다. 이러한 기능의 예로는 3D 시각화, 그래픽 집약적 원격 워크스테이션, 3D 렌더링, 애플리케이션 스트리밍, 비디오 인코딩 등이 있습니다
 - 스토리지 최적화 : 인스턴스는 로컬 스토리지의 대규모 데이터 집합에 대한 순차적 읽기 및 쓰기 액세스 권한이 필요한 워크로드용으로 설계되었습니다. 스토리지 최적화 인스턴스에 적합한 워크로드의 예로는 NoSQL 데이터베이스, 인 메모리 데이터베이스, 확장 트랜잭션 데이터베이스, 데이터 웨어하우징, Elasticsearch, 분석 등이 있습니다. 
-- [참고]![alt text](../a_images/EC2_instance.png)
+- [참고]![alt text](../../a_images/EC2_instance.png)
 
 ### 인스턴스 수명주기
-![alt text](../a_images/EC2_life_cycle.png)
+![alt text](../../a_images/EC2_life_cycle.png)
 
 IP는 공인 IP가 있는데 public이랑 Elatic으로 나뉨 public은 재부팅 시 새로 발급이 됨
 
@@ -163,7 +163,7 @@ IP는 공인 IP가 있는데 public이랑 Elatic으로 나뉨 public은 재부�
 ### AWS 컨테이너 서비스
 
 ### 가상머신과 컨테이너 비교
-1. ![alt text](../a_images/AWS_VM%20vs%20Container.png)
+1. ![alt text](../../a_images/AWS_VM%20vs%20Container.png)
 
 2. 운영체제 관리 부분
 ```
@@ -204,7 +204,7 @@ IP는 공인 IP가 있는데 public이랑 Elatic으로 나뉨 public은 재부�
 - 가용성 및 내결함성 기본 제공
 
 ### Lambda
-![alt text](../a_images/AWS_Lambda.png)
+![alt text](../../../../a_images/AWS_Lambda.png)
 
 - 제한점이 있음 
     - 메모리가 128MB ~ 10GB 
@@ -290,7 +290,7 @@ VPC(Virtual Private Cloud) 가 나오는 겁니다.
 - VPC 이름
 - VPC의 IP 주소 범위
 
-![alt text](../a_images/Amazon_VPC.png)
+![alt text](../../a_images/Amazon_VPC.png)
 * 사이더 범위? 를 지정해주어야함
 
 ###### 서브넷
@@ -304,14 +304,14 @@ VPC(Virtual Private Cloud) 가 나오는 겁니다.
 ### 클래스 없는 도메인 간 라우팅(CIDR)
 > 서브넷(Subnet) 은 “공간(네트워크 구역)”이고,
 라우팅(Route) 은 “그 공간들 사이를 연결하고, 데이터가 어느 길로 갈지 결정하는 규칙”
-![alt text](../a_images/CIDR_Image.png)
+![alt text](../../a_images/CIDR_Image.png)
 
 ### 네트워크 액세스
-![alt text](../a_images/Network_Access.png)
+![alt text](../../a_images/Network_Access.png)
 
 ### 네트워크 엑세스 제어목록 (NACL)
 
-![alt text](../a_images/NACL.png)
+![alt text](../../a_images/NACL.png)
 
 
 ### 보안 그룹 : EC3 인스턴스에 연결된 가상 방화벽
@@ -359,7 +359,7 @@ VPC 흐름로그
 - 블록 스토리지
 - 파일스토리지 
 - 객체 스토리지
-![alt text](../a_images/stroage_type.png)
+![alt text](../../a_images/stroage_type.png)
 ### 💾 AWS 스토리지의 3가지 유형
 
 | **스토리지 유형** | **AWS 서비스 예시** | **주요 사용 대상** | **저장 방식 요약** |
@@ -476,4 +476,4 @@ AWS에서는 **보안을 매우 중요하게 다룹니다.**
 // TODO : DB 및 모니터링은 쭉 읽는것만으로 충분한데 로드벨런서 공부해야함
 
 ### 로드 밸런서 
-[보충자료]![alt text](../a_images/loadBalance.png)
+[보충자료]![alt text](../../a_images/loadBalance.png)

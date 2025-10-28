@@ -10,7 +10,7 @@
 
 ### AWS service [모듈1]
 - 고객이 AWS 이전하는 이유
-![alt text](../a_images/reason_use_aws.png)
+![alt text](../../a_images/reason_use_aws.png)
 
 
 ### AWS 인프라
@@ -177,14 +177,14 @@ s3.putObject("my-bucket", "photo.jpg", new File("photo.jpg"));
 > 앞서 thechnical_essential에서 적었듯 템플릿이기에
 `재사용성 용이`,`복구가능`의 특징이 있음
 
-[참조](./aws_thechnical_essential.md#ami-개념)
+[참조](../thechinicalEssential/aws_thechnical_essential.md#ami-개념)
 
 ### AWS Compute Optimizer
 - 오버사이즈된 인스턴스 설정을 그에 대한 리포트를 제공해주는 서비스
 
 ### Amazon Ec2 키 페어
 - SSH 또는 Session Manager
-![alt text](../a_images/key_pare.png)
+![alt text](../../a_images/key_pare.png)
 > SSH를 사용하면 키페이를 반드시 설정해야한다.
 
 ### EBS
@@ -199,7 +199,7 @@ S3는 EC2와 상관없이 언제든 조회 할 수 있는 클라우드 저장소
 
 [참고 그림]
 
-![alt text](../a_images/EBS_type.png)
+![alt text](../../a_images/EBS_type.png)
 
 ---
 
@@ -211,7 +211,7 @@ S3는 EC2와 상관없이 언제든 조회 할 수 있는 클라우드 저장소
 
 [그림]
 
-![alt text](../a_images/AWS_CIDR.png)
+![alt text](../../a_images/AWS_CIDR.png)
 
 >그렇다면 앞으로 서브넷이나 VPC를 만들 때  /를 붙이는데 CIDR과 똑같다.
 또한, 그림에서 보이듯 약 65,536개의 유니크한 CIDR IP 주소를 가질 수 있는것이다.
@@ -238,14 +238,14 @@ S3는 EC2와 상관없이 언제든 조회 할 수 있는 클라우드 저장소
 - 인바운드는 막고 대신 프라이빗 서브넷에 있는 내용이 밖으로 나가야할때 퍼블릭 서브넷으로 연결해주는것
 [그림]
 
-![alt text](../a_images/Nat.png)
+![alt text](../../a_images/Nat.png)
 
 ### 탄력적 네트워크 인터페이스 (ENI)
 > 추가적인 네트워크 카드가 필요하여 연결이 필요할 때 사용
 
 [그림]
 
-![alt text](../a_images/ENI_structure.png)
+![alt text](../../a_images/ENI_structure.png)
 
 -> ENI 구조
 
@@ -259,7 +259,7 @@ public ip중 안바뀌는부분말하는거
 
 [그림]
 
-![alt text](../a_images/multi_vpc.png)
+![alt text](../../a_images/multi_vpc.png)
 
 ---
 ### 컴퓨팅 [모듈4]
@@ -279,7 +279,7 @@ public ip중 안바뀌는부분말하는거
 
 [그림]
 
-![alt text](../a_images/security_group.png)
+![alt text](../../a_images/security_group.png)
 
 ### 다중 방어 계층이 있는 인프라 설계
 > 결국 두개가 이어져 있어야함

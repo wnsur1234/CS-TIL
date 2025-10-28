@@ -53,7 +53,7 @@
 ### 파티션 키 디자인
 > 키는 파티션 키랑 정렬 키 두가지를 사용한다.
 
-![alt text](../a_images/design_partytionKey.png)
+![alt text](../../a_images/design_partytionKey.png)
 
 ### 인덱스 설계
 
@@ -111,10 +111,10 @@
 ### Lambda를 간접적으로 호출하는 이벤트 소스
 > 그림에 나오는 것들과 함께 연결되어 람다가 올라간다고 보면 됨
 
-![alt text](../a_images/Lambda_with_event.png)
+![alt text](../../a_images/Lambda_with_event.png)
 
 ### Lambda 함수의 구조 
-![alt text](../a_images/Lambda_structure.png)
+![alt text](../../a_images/Lambda_structure.png)
 
 ### 람다의 호출 방법
 - 동기식(직접 호출) 
@@ -132,7 +132,7 @@
 
 - 람다는 호출이 되어 실행이 될때 런타임환경으로 사용이 됨
 
-![alt text](../a_images/Lambda_lifeCycle.png)
+![alt text](../../a_images/Lambda_lifeCycle.png)
 
 -> 여기서 콜드 스타트 즉 호출되기전 대기 시간이 있는데 이때 시간이 좀 많이 걸림
 그걸 해결하기 위해 콜드 스타트를 최소화 하는 방법을 구상한다.

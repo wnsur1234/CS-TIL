@@ -40,12 +40,12 @@ DCs'' < Location Zone
 
 [그림]
 
-![alt text](../a_images/tenunci.png)
+![alt text](../../a_images/tenunci.png)
 
 ### 인스턴스 배치 그룹 및 사용 사례
 [그림]
 
-![alt text](../a_images/instance_batch_group.png)
+![alt text](../../a_images/instance_batch_group.png)
 
 ---
 
@@ -54,7 +54,7 @@ DCs'' < Location Zone
 
 [그림]
 
-![alt text](../a_images/insatance_storeage.png)
+![alt text](../../a_images/insatance_storeage.png)
 
 -> 이건 언제 사용할 수 있냐를 바라보면 캐시에서 사용을 한다.
 
@@ -96,7 +96,7 @@ EC2 인스턴스
 - 최대 10GB 메모리 지원
 - 이벤트 트리거 기능이 있음 (제한된 서비스에대해서)
 
-![alt text](../a_images/chaining_security.png)
+![alt text](../../a_images/chaining_security.png)
 
 ---
 
@@ -138,7 +138,7 @@ EC2 인스턴스
 ### IAM 정책 평가 방법
 [그림]
 
-![alt text](../a_images/IAM_polic.png)
+![alt text](../../a_images/IAM_polic.png)
 
 결국 명시적(effect)으로 권한 지정을 하지 않는 이상 암시적 거부가 된다.
 따라서 초기 정책은 아무것도 설정되지 않기에 모두 거부가 되는것
@@ -150,7 +150,7 @@ EC2 인스턴스
 
 [그림]
 
-![alt text](../a_images/iam_role_structure.png)
+![alt text](../../a_images/iam_role_structure.png)
 
 그렇다면 역할은 무엇이냐
 
@@ -161,7 +161,7 @@ EC2 인스턴스
 `결국 role에 권한을 부여해 놓으면 임시로 권한을 사용할 수 있다.`
 
 ### 심층 방어
-![alt text](../a_images/protected_deep.png)
+![alt text](../../a_images/protected_deep.png)
 
 ---
 
@@ -171,7 +171,7 @@ EC2 인스턴스
 
 [해결 방법]
 ### AWS Oragnizations 사용
-![alt text](../a_images/AWS_Oragnizations.png)
+![alt text](../../a_images/AWS_Oragnizations.png)
 
 ```
 Oraganizations란 여러 AWS 계정을 하나의 그룹(조직)으로 묶어서 중앙에서 관리할 수 있게 해주는 서비스입니다.
@@ -205,7 +205,7 @@ Oraganizations란 여러 AWS 계정을 하나의 그룹(조직)으로 묶어서 
 ### 스토리지 개요
 > 블록스토리지, 파일 스토리지, 객체 스토리 이렇게 3종류가 있고 자세한설명은 참조
 
-[참조](./aws_developing.md#스토리지의-유형)
+[참조](../developing/aws_developing.md#스토리지의-유형)
 
 ### Amazon S3
 > 내구성이 뛰어난 개체 스토리지 솔루션 입니다.
@@ -287,7 +287,7 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 ### 관리형 서비스와 비관리형 서비스
 [그림]
 
-![alt text](../a_images/DB_service.png)
+![alt text](../../a_images/DB_service.png)
 
 ### RDS 데이터 베이스 엔진
 >Amazon RDS는 메모리, 성능 또는 I/O에 최적화된 7개의 데이터베이스 엔진에서 사용할 수 있습니다.
@@ -310,7 +310,7 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 
 ### 읽기 전용 복제본
 > 읽기 전용 복제본을 사용하여 다음을 수행할수 있다.
-![alt text](../a_images/readOnly_DB.png)
+![alt text](../../a_images/readOnly_DB.png)
 
 -> 읽기 전용 복제본이 문제가 생겨도 마스터로 승격을 시킬 수 있다.
 
@@ -327,7 +327,7 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 ### 캐싱 아키텍쳐
 > AWS에서는 Amazon ElastiChahe이다.
 
-![alt text](../a_images/DB_chach_architecteting.png)
+![alt text](../../a_images/DB_chach_architecteting.png)
 
 캐싱을 하고 이걸 어떻게 접근할꺼냐 했을 때 접근 방법
 - 레이지 로딩 (Lazy loading)
@@ -359,7 +359,7 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 
 ### 로드 밸런싱
 ### Elastic Load Balancing(ELB)
-![alt text](../a_images/roadBalancing.png)
+![alt text](../../a_images/roadBalancing.png)
 
 ### ELB 로드 밸런서 유형
 - Application Load Balancer Http 및 HTTPs
@@ -379,7 +379,7 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 • 네트워크 계층(계층 3)에서 작동
 
 ### 자동 규모 조정 (Auto Scaling)
-![alt text](../a_images/Auto_Scaling.png)
+![alt text](../../a_images/Auto_Scaling.png)
 
 ```
 규모 조정 정책을 지정하면 Amazon EC2 Auto Scaling이 애플리케이션의 늘어나거나 줄어드는 수요에 따라 인스턴스를 시작하거나 종료할 수 있습니다. Amazon EC2 Auto Scaling은 ELB와 통합되므로 하나 이상의 로드 밸런서를 기존 Amazon EC2 Auto Scaling 그룹에 연결할 수 있습니다. 로드 밸런서를 연결하면 그룹의 인스턴스를 자동으로 등록하고 수신 트래픽이 인스턴스 전체에 분산됩니다.
@@ -394,7 +394,7 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 > 최대와 최소 인스턴스 수를 설정해야한다
 - 최소는 가용성 기준으로 최소를 정하고
 - 최대는 사용자가 부담할 수 있는 비용 기준으로 설정
-![alt text](../a_images/group_size.png)
+![alt text](../../a_images/group_size.png)
 
 - 규모조정 방법 (오토스케일링 방법)
 > 가장 중요한건 동적 조정
@@ -425,8 +425,8 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 
 [추가장표]
 
-![alt text](../a_images/cloudWatch_eventBridge.png)
-![alt text](../a_images/cloudWatch_eventBridge_2.png)
+![alt text](../../a_images/cloudWatch_eventBridge.png)
+![alt text](../../a_images/cloudWatch_eventBridge_2.png)
 ---
 
 // TODO : 주말 10/26일 일요일 까지 스토리지 ~ 모니터링 및 크기조정 모듈[5~7] 까지 좀 더 자세히 공부 후 실습 3,4 완료 하기 
