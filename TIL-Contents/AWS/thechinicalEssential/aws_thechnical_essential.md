@@ -204,7 +204,7 @@ IP는 공인 IP가 있는데 public이랑 Elatic으로 나뉨 public은 재부�
 - 가용성 및 내결함성 기본 제공
 
 ### Lambda
-![alt text](../../../../a_images/AWS_Lambda.png)
+![alt text](../../a_images/AWS_Lambda.png)
 
 - 제한점이 있음 
     - 메모리가 128MB ~ 10GB 
@@ -476,4 +476,5 @@ AWS에서는 **보안을 매우 중요하게 다룹니다.**
 // TODO : DB 및 모니터링은 쭉 읽는것만으로 충분한데 로드벨런서 공부해야함
 
 ### 로드 밸런서 
+
 [보충자료]![alt text](../../a_images/loadBalance.png)
