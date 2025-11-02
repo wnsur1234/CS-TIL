@@ -200,7 +200,6 @@ Oraganizations란 여러 AWS 계정을 하나의 그룹(조직)으로 묶어서 
 ### AWS Storage service [모듈5]
 > 대표적으로 S3가 있다.
  
-// TODO : 스토리지 좀 더 보기 주말에 생각보다 내용 많음
 ### 스토리지 개요
 > 블록스토리지, 파일 스토리지, 객체 스토리 이렇게 3종류가 있고 자세한설명은 참조
 
@@ -428,3 +427,4 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 ![alt text](../../a_images/cloudWatch_eventBridge_2.png)
 
 ---
+
