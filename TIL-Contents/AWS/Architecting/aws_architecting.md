@@ -64,7 +64,6 @@ AWS CLI로 원격 명령을 실행할 수 있기 때문
 ```
 > 답변 :
 1. CLI와 SSH는 완전히 다른것
-```
 # 🧭 AWS CLI vs SSH vs Session Manager 정리
 
 ## ✅ 1️⃣ CLI vs SSH 비교
@@ -101,7 +100,7 @@ AWS CLI로 원격 명령을 실행할 수 있기 때문
 
 ## ✅ 3️⃣ 전체 개념 구조 요약
 
-```text
+```
 [내 로컬 PC]
   ├── AWS CLI → AWS API를 호출하여 리소스 제어
   ├── SSH → EC2 인스턴스로 직접 로그인 (외부 접속)
@@ -110,7 +109,7 @@ AWS CLI로 원격 명령을 실행할 수 있기 때문
 
 ---
 ### 궁금점 1과 2 정리
-```
+
 ## ✅ 1️⃣ SDK란?
 
 **SDK (Software Development Kit)**는  
@@ -124,7 +123,7 @@ AWS에서 제공하는 **개발용 라이브러리**로,
 
 ### 💡 예시: Java 코드에서 S3 파일 업로드
 
-```java
+```
 // Java SDK 예시
 AmazonS3 s3 = AmazonS3ClientBuilder.standard()
     .withRegion("ap-northeast-2")
@@ -285,4 +284,5 @@ public ip중 안바뀌는부분말하는거
 > 결국 두개가 이어져 있어야함
 
 최종적으로 인스턴스에 접근하려면 퍼블릭서브넷에 걸려있는 ACL을 통과하고 인스턴스에 있는 보안그룹을 통과해야 접근가능하기 때문
+
 
