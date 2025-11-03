@@ -50,7 +50,7 @@
 ### JWT
 > :arrow_double_up:[Top](#회원가입로그인-기본-흐름)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
 * [▶️답변내용](https://github.com/wnsur1234/CS-TIL/blob/main/TIL-Contents/Java/spring/jwt_theory.md)
-* 설명 / 출처 : (https://closed-on-sunday.tistory.com/5)
+* 설명 / 출처 : (https://closed-on-sundazy.tistory.com/5)
 -> 너무 설명을 잘 해 놓았음..!
 
 * 구현 / 출처 : (https://closed-on-sunday.tistory.com/10)
