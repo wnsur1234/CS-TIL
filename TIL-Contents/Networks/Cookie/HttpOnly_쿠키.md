@@ -8,9 +8,10 @@
 - 쿠키는 두요청이 동일한 브라우저에 들어왔는지 아닌지를 판단할 때 주로 사용한다.
     - 이를 이용하면 사용자의 로그인 상태를 유지할 수 있다.
         - 상태가 없는 http 프로토콜에서 상태 정보를 기억 시켜주기 때문 
+
 > 여기서 동일한 브라우저에 두 요청이 있다는데 이게 뭔소리지?
 
-답변 : 
+[답변] 
 #### 📘 시나리오
 당신이 크롬 브라우저로 https://example.com에 로그인합니다.
 서버는 응답으로 이런 쿠키를 내려보냅니다:
@@ -54,6 +55,23 @@ Cookie: sessionId=abc123
 2. 같은 도메인이라면 header 에 자동으로 쿠키가 담겨서 보내진다.
     - 같은 도메인이라면 서로 다른 scheme일지라도 쿠키를 공유할 수 있다.
 -> 여기서 뜻하는 도메인이란? 앤드포인트를 말하는건지? 아니면 같은 탭을 말하는건지?
+
+[답변]
+> 🧠 “도메인” = URL 중 호스트명 부분을 의미합니다
+
+```
+https://gptonline.ai/ko/learn?id=123
+        └────────────┬────────────┘
+                 이것이 도메인 (gptonline.ai)
+```
+ 
+- 도메인(gptonline.ai, naver.com, example.org 등)
+- 서브도메인 (www.naver.com, api.naver.com) -> 다르면 기본적으로 안 됨 (a.example.com ≠ b.example.com)
+- 포트 (:80, :443 등) -> 무시됨 (example.com:80 == example.com:3000)
+- 프로토콜 (http/https) -> 기본적으로 무시됨 (http/https) 하지만 secure 속성이 있으면 https만 허용
+
+이 url에는 정보가 담기는데 이가 같은 것을 말함
+
 
 3. 서버에서도, 클라이언트에서도 생성/접근/관리할 수 있다.
 
@@ -137,6 +155,15 @@ HttpOnly 속성과 Secure 속성을 사용해 생성한 쿠키의 예시이다.
 ```
 Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
 ```
+
+### 🩻 위 두가지를 사용할 때 각 주의점
+
+[httponly]
+- HttpOnly를 쓰면 JS에서 이 쿠키를 읽을 수 없으므로, 프론트엔드에서 꺼내서 헤더에 담는 식의 토큰 사용이 불가능
+    - 예: RefreshToken을 HttpOnly로 저장하면, JS에서는 절대 접근 못 함 
+        → 자동 쿠키 전송 구조를 사용해야 함 (withCredentials: true)
+[secure]
+- Secure를 쓰면 HTTPS 환경이 아닌 경우 쿠키가 전송되지 않음 → 개발 환경에서도 HTTPS 써야 테스트 가능
 
 ---
 
