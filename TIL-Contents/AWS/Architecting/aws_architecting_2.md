@@ -30,13 +30,12 @@ DCs'' < Location Zone
 ### 테넌시
 > **테넌시(Tenancy)**는 한마디로 가상 서버(EC2 인스턴스)가 물리적인 서버 위에서 어떻게 배치되고, 다른 사용자와 자원을 공유하는지를 의미한다.
 즉, “이 물리 서버를 나 혼자 쓸 것이냐, 다른 고객과 함께 쓸 것이냐”를 결정하는 설정
-```
+
 | 테넌시 유형 | 설명 | 특징 |
 |--------------|------|------|
 | **Default (Shared)** | 기본값. 여러 고객의 인스턴스가 동일한 하드웨어를 공유 | 💰 저렴하고 일반적인 워크로드에 적합 |
 | **Dedicated Instance** | 특정 계정 전용 물리 서버에서만 인스턴스 실행 | 🔒 물리적 격리 제공, 비용 증가 |
 | **Dedicated Host** | 완전히 전용 물리 서버를 고객이 직접 제어 | 🧾 라이선스 제약 있는 소프트웨어에 유리 (예: Windows Server, Oracle) |
-```
 
 [그림]
 
@@ -201,7 +200,6 @@ Oraganizations란 여러 AWS 계정을 하나의 그룹(조직)으로 묶어서 
 ### AWS Storage service [모듈5]
 > 대표적으로 S3가 있다.
  
-// TODO : 스토리지 좀 더 보기 주말에 생각보다 내용 많음
 ### 스토리지 개요
 > 블록스토리지, 파일 스토리지, 객체 스토리 이렇게 3종류가 있고 자세한설명은 참조
 
@@ -427,4 +425,6 @@ System(Amazon EFS)과 Amazon FSx가 적합합니다. 클라우드의 완전 관�
 
 ![alt text](../../a_images/cloudWatch_eventBridge.png)
 ![alt text](../../a_images/cloudWatch_eventBridge_2.png)
+
 ---
+
