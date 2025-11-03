@@ -169,3 +169,10 @@ Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
 
 위 정리 내용은 
 [cookie 블로그](https://velog.io/@eeeve/HttpOnly%EC%99%80-Secure-Cookie)를 [참조] 하였습니다.
+
+---
+
+# 실전으로!!
+> 이제 실제 내가 구현한 JWT로그인 방식에 HttpOnly를 구현해보자
+
+[실전](./HttpOnly_실전용.md)
