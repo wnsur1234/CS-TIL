@@ -46,7 +46,6 @@
     - [로그인 인증/인가](TIL-Contents/Java/spring/login.md)
   - [Web Socket]
     - [이론](TIL-Contents/Java/spring/webSocket_theory.md)
-    - [stomp_실습](TIL-Contents/Java/spring/webSocket_stomp.md)
 ---
 ## ✍ 작성 규칙
 1. 하루 최소 1개 이상 학습 기록
