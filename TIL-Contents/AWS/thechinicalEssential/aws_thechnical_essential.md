@@ -565,3 +565,7 @@ CloudWatch는 온프레미스 리소스에서 모니터링 데이터를 `지표,
 
 ### Auto Scailing
 > 사실상 위 모든 조정하는걸 자동으로 해주는것
+
+
+
+sdfsdfsdfsdf
