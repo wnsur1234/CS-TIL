@@ -30,7 +30,8 @@
   - [3일차](./TIL-Contents/AWS/developing/aws_developing_3.md)
 - [PlanningDesigningDatabase]
   - [1일차](./TIL-Contents/AWS/PlaaningDesiginingDatabase/aws_databases.md)
-
+- [DEVOPs_Engineering]
+  - [1일차](./TIL-Contents/AWS/DEVOps_Engineering/aws_devops_1.md)
 --- 
 
 ### Java & Spring
