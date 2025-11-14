@@ -23,3 +23,5 @@ Formation에서의 보안이라는것은 카탈로그화 된 데이터에 대해
 ex) name필드는 볼 수 있고, 뭐 다른 필드는 볼 수 없고를 결정
 
 ![alt text](../../a_images/formation_policy.png)
+
+---
