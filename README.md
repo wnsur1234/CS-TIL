@@ -29,7 +29,8 @@
   - [2일차](./TIL-Contents/AWS/developing/aws_developing_2.md)
   - [3일차](./TIL-Contents/AWS/developing/aws_developing_3.md)
 - [PlanningDesigningDatabase]
-  - [1일차](./TIL-Contents/AWS/PlaaningDesiginingDatabase/aws_databases.md)
+  - [1일차](./TIL-Contents/AWS/PlanningDesiginingDatabase/aws_databases.md)
+  - [2일차](./TIL-Contents/AWS/PlanningDesigningDatabase/BuildingDataLakes.md)
 - [DEVOPs_Engineering]
   - [1일차](./TIL-Contents/AWS/DEVOps_Engineering/aws_devops_1.md)
 --- 
