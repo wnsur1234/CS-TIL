@@ -25,3 +25,5 @@ ex) name필드는 볼 수 있고, 뭐 다른 필드는 볼 수 없고를 결정
 ![alt text](../../a_images/formation_policy.png)
 
 ---
+
+### 이것은 자격증 기반 수업 특강느낌이였음
