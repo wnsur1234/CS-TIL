@@ -40,3 +40,24 @@
 ![alt text](../../a_images/flow_learn_model.png)
 
 품질이 높은 데이터를 사용해야한다.
+
+---
+
+### AWS AI/ML 서비스 스택
+> Amazon Bedrock에서 100개가 넘는 Foundation 모델들을 제공함
+
+각 서비스들은 가격이나 학습된 품질등이 다름
+
+![alt text](../../a_images/aws_ai_service.png)
+
+---
+
+### 생성형 AI 사용사례 [모듈2]
+
+### 생성형 AI 애플리케이션 수명 주기 -> 절차
+> 사실상 생성형 AI를 사용한다는것은 애플리케이션을 만든다고 생각하면되고
+애플리케이션을 사용하는 절차를 보는것
+
+![alt text](../../a_images/flow_aiApp.png)
+
+
