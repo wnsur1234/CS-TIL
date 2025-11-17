@@ -33,6 +33,11 @@
   - [2일차](./TIL-Contents/AWS/PlanningDesigningDatabase/BuildingDataLakes.md)
 - [DEVOPs_Engineering]
   - [1일차](./TIL-Contents/AWS/DEVOps_Engineering/aws_devops_1.md)
+
+---
+
+- [AI]
+  - [1일차](/TIL-Contents/AWS/AI/AI_Essentials.md)
 --- 
 
 ### Java & Spring
