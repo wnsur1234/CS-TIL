@@ -39,7 +39,7 @@
 - [AI]
   - [기초 1일짜리](/TIL-Contents/AWS/AI/AI_Essentials.md)
   - [Developing Generative AI Applications]
-    - [1일차](./TIL-Contents/AWS/AI/Generative_AI_APP.md)
+    - [1일차](./TIL-Contents/AWS/AI/Developing_Generative/Generative_AI_APP.md)
 --- 
 
 ### Java & Spring
