@@ -65,3 +65,7 @@ AWS는 엔드포인트를 통해 서비스 접근이 가능하고
 다만 요청시 다양한 방법이 있다.
 
 ![alt text](../../../a_images/bedRock_Commuicate.png)
+
+---
+
+레그시스템?
