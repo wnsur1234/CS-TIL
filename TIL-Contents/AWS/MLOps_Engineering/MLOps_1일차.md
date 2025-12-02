@@ -81,3 +81,4 @@ ex) 수업을 듣는데 필요한 환경이나 이런걸 원래는 단계별로 
 service Catalog : MLOps 엔지니어가 규정하는 Iac를 만들어놓음
 이걸 사용함
 이걸 product라고하고 portfolio화 함
+
