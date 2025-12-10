@@ -76,7 +76,8 @@
 파일들이 있었음 
 
 [그림 참고]
-![alt text](image.png)
+
+![alt text](../../../a_images/common_exception.png)
 
 - 위 그림에서 지금까지 설명한것 제외 설명
     - ErrorInfo
