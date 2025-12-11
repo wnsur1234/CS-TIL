@@ -51,8 +51,8 @@ Agent 는 BedRock을 사용하고 db는 RDB의 값도 전달 해야하고 Dynamo
 -> 답변 : 이게 이미 있다.
 ```
 implementation platform('software.amazon.awssdk:bom:2.29.0')
-implementation 'software.amazon.awssdk:dynamodb'
-implementation 'software.amazon.awssdk:dynamodb-enhanced'
+implementation "software.amazon.awssdk:bedrockagentruntime"
+implementation "software.amazon.awssdk:bedrockagent"
 ```
 
 - 호출 대상은 이것입니다👇
@@ -256,5 +256,6 @@ Lambda여도 호출 가능
 로컬에서 실행해도 호출 가능
 
 EKS 배포 여부는 전혀 영향을 주지 않는다.
+
 
 ---
