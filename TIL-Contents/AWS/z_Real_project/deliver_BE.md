@@ -177,33 +177,6 @@ public class TravelDateService {
     }
 }
 ```
----
-
-### 방법
-> 방법은 매우 많은데 몇가지 알아보자
-
-### 1.Spring Boot → API Gateway → Lambda(AI Agent) 호출 (가장 일반적)
-    1. Spring Boot에서 데이터를 저장하거나 수정한 뒤
-    2. `API Gateway 엔드포인트`로 HTTP `POST`
-    3. Lambda가 요청을 받아 Agent 로직 실행
-    4. 필요하면 결과를 다시 `DynamoDB/S3에 저장`
-
-[예시코드]
-```
-RestTemplate restTemplate = new RestTemplate();
-String agentUrl = "https://xxxx.execute-api.ap-northeast-2.amazonaws.com/agent";
-
-Map<String, Object> body = new HashMap<>();
-body.put("title", dto.getTitle());
-body.put("content", dto.getContent());
-
-restTemplate.postForObject(agentUrl, body, String.class);
-```
-> “Agent에게 전달” == “AWS API 엔드포인트를 직접 호출”
-
----
-
-### 2. Spring Boot → S3 업로드 → S3 Trigger → Lambda(AI Agent)
 
 ---
 
@@ -219,3 +192,20 @@ InvokeAgentRequest request = InvokeAgentRequest.builder()
         .sessionId(sessionId)
         .inputText("다음 날 일정도 추천해줘")
         .build();
+
+✔ EKS + CI/CD는 Bedrock Agent와 아무 충돌도 없다
+
+→ 그냥 백엔드가 어디에 배포되었는지는 상관없이
+Spring Boot가 Bedrock Agent Runtime API를 호출하기만 하면 된다.
+
+즉,
+
+EC2 에 있어도 호출 가능
+
+EKS에 있어도 호출 가능
+
+Lambda여도 호출 가능
+
+로컬에서 실행해도 호출 가능
+
+EKS 배포 여부는 전혀 영향을 주지 않는다.
