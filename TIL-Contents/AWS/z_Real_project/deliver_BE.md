@@ -259,3 +259,74 @@ EKS 배포 여부는 전혀 영향을 주지 않는다.
 
 
 ---
+
+### 실제 적용 해보니..
+
+- BedrockAgentRuntimeClient를 사용하지 못하였고
+- BedrockAgentRuntimeAsyncClient를 사용하였는데 
+    - 둘의 차이점 동기 VS 비동기
+    - Async가 실시간 처리가 가능함
+
+> 그래서 Async는 실시간응답이 오는 InvokeAgentResponseHandler를 구현해야함
+
+```
+InvokeAgentResponseHandler handler = new InvokeAgentResponseHandler() {
+
+            // 여기의 결과값
+            @Override
+            public void responseReceived(InvokeAgentResponse response) {
+            }
+
+            /**
+             * 시나리오
+             * 1. 실제 응답 = ResponseStream이고
+             * 2. instanceof 에서 PayloadPart(=chunk)타입만 저장
+             * @param stream Agent 응답 조각
+             */
+            // 또 여기 결과값
+            @Override
+            public void onEventStream(SdkPublisher<ResponseStream> stream) {
+                stream.subscribe(event -> {
+                    if (event instanceof PayloadPart payload) {
+                        SdkBytes bytes = payload.bytes();
+                        String text = new String(bytes.asByteArray(), UTF_8);
+                        finalText.append(text);
+                    }
+                });
+            }
+
+            // 또 여기 결과값
+            @Override
+            public void exceptionOccurred(Throwable throwable) {
+                resultFuture.completeExceptionally(throwable);
+            }
+
+            // 을 최종적으로 모아서 답변
+            @Override
+            public void complete() {
+                resultFuture.complete(finalText.toString());
+            }
+        };
+```
+
+### 중점적으로 봐야할 point
+
+- Handler에서 ResponseStream에 Agent의 조각 응답들이 담김
+- instanceof를 통해 그 응답의 type을 결정하는데
+    - type은 chunk부터 엄청많음
+    - 근데 우리가 필요한건 Chunk타입이고
+    - chunk = PayloadPart 이다.
+    - 그걸 text에 모으고
+- final text에 저장
+
+- 마지막으로 CompletableFuture<String> 으로 반환한다. 
+
+### CompletableFuture<String> 란? 
+> “비동기 작업의 결과를 미래에 받겠다는 약속(Promise)”
+
+- String = 나중에 만들어질 실제 최종 응답 값
+- CompletableFuture<String> = 그 값을 나중에 넣어서 돌려줄 수 있는 그릇
+
+Agent의 응답은 스트리밍 기반이고 바로 리턴되지 않기 때문에,
+즉시 String을 반환할 수 없고
+나중에 complete() 되는 시점에 값을 반환하도록 미래 객체(Future)를 사용
