@@ -17,3 +17,9 @@ NACU =>
 SecurityGroup -> Allow staful
 
 // TODO : VPC 아키텍쳐 내용 좀 더 찾아보면서 게이트웨이나 통신 하는 부분 찾아보기
+
+
+### 테라폼
+> 자동화 관리인데
+
+무조건 알아야한다고함
