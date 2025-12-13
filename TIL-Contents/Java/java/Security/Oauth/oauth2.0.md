@@ -255,3 +255,69 @@ OAuth + 일반 로그인 계정 병합 전략
 
 필요하시면 프론트 요청 URL부터 실제 통신 흐름까지 같이 그려드릴게
 ```
+
+===
+
+### 찐으로 실제 적용을 마쳐보니,...
+> 코드를 리펙토링해야하는 부분들이 있었다.
+
+- yml 실제 적용 ver
+```
+  security:
+    oauth2:
+      client:
+        registration:
+          kakao:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+            redirect-uri: ${REDIRECT_URI}
+            client-authentication-method: client_secret_post
+            authorization-grant-type: authorization_code
+            scope:
+            - profile_nickname
+            - profile_image
+            - account_email
+            client-name: Kakao
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
+```
+차이점 :
+- authorization-grant-type : POST로 하면된다고 공식문서에 나와있지만
+    - 실제로 인식을하지 못하여 블로그를 찾아보니 authorization-grant-type= Client_secret_Post로 변경하면 된다고함
+-> 이부분은 트러블슈팅 넣어도 좋을듯
+
+- Scope: 
+    - User엔티티에 저장되어야하는값이 email도 필수로 필요하여 email을 가져오는 account_email 기재 필요했음
+
+```
+Map<String, Object> attributes = oauth2User.getAttributes();
+        Map<String, Object> kakaoAccount =
+                (Map<String, Object>) attributes.get("kakao_account");
+        Map<String, Object> profile =
+                (Map<String, Object>) kakaoAccount.get("profile");
+
+        String email = (String) kakaoAccount.get("email");
+        String nickname = (String) profile.get("nickname");
+        String dummyPassword = passwordEncoder.encode("OAUTH_KAKAO_" + email);
+
+        Member member = memberRepository.findByEmail(email)
+                .orElseGet(() -> memberRepository.save(
+                        Member.builder()
+                                .email(email)
+                                .password(dummyPassword)
+                                .role(Role.CUSTOMER)
+                                .name(nickname)
+                                .nickname(nickname)
+                                .provider(Provider.KAKAO)
+                                .status(Status.ACTIVE)
+                                .build()
+                ));
+```
+차이점 
+- Member에 저장될때 내 User엔티티에 맞추어 필수값들을 초기세팅으로 지정을 해주어야함
+    - 이에따라
+    - password 등 초기값으로 세팅
