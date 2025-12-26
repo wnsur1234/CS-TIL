@@ -143,4 +143,40 @@ Rout53 연결 앤드포인트 생성
 = Flexible Retrival 스토리지 클래스
 
 ### CI/CD
-= tjdrhdwjrdls 
+= 성공적인
+
+### 중앙관리
+= control Tower -> 프라이빗 서브넷과 퍼블릭 서브넷이 있는 VPC가 있는 네트워킹 계정 생성
+
+### RedShift DynamoDB
+= S3버킷 + DynamoDB + RedShift Copy명령 사용으로 버킷 읽기
+
+### 12년간 2.5TB 데이터 생성 + EBS볼륨에 데이터 저장 및 데이터 백업솔루션
+= S3 + Glacier Flexible Retrival 스토리지 클래스 사용
+
+### EC2와 RDS를 ACL에 의존 x
+= ALB를 퍼블릭 서브넷 배치, EC2와 RDS는 프라이빗 서브넷 배치
+
+### ACL이란?
+> Access Control List(접근제어목록) `누가,어떤트래픽이 무엇에 접근할 수 있는지`를 규칙으로 적어둔것
+
+1. Network ACL(NACL)
+- VPC 서브넷 단위로 적용되는 방화벽 규칙
+- 인바운드/ 아웃바운드 둘 다 규칙 있고
+- 허용 거부는 둘다 가능
+- Stateless 들어오는걸 허용했으면 나가는 응답도 별도로 허용규칙 필요
+
+> 한줄로 서브넷 입구에서 패킷을 걸러내는 규칙표
+
+2. S3 ACL
+- s3 객체/버킷에 붙는 옛 방식의 권한 설정
+- 요즘은 보통 IAM Policy로 권한관리
+
+> S3 권한을 `목록`으로 주는 오래된 방식
+
+### `에플리케이션과 데이터베이스` 마이그레이션 시 권한이 있는 엑세스가 필요한 타사 데이터베이스기능을 사용
+= 기본도구인 Orcale용 `RDS Custom`으로 DB 마이그레이션
+
+### EC2 Auto Scalling 그룹 사용, EC2는 ALB에 있을 때 postgre
+= 요청의 경로가 와일드 카드와 일치할 때 유지관리 응답을 반환하기위해 ALB에 리스너 규칙만듬, + 큐칙 우선순위를 1위로 설정
+
