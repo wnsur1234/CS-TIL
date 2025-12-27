@@ -197,6 +197,86 @@ Rout53 연결 앤드포인트 생성
 ### CI/CD
 = CloudFront 캐시 무효화
 
-### EC2 Auto Scalling 그룹 사용, EC2는 ALB에 있을 때 postgre
-= 요청의 경로가 와일드 카드와 일치할 때 유지관리 응답을 반환하기위해 ALB에 리스너 규칙만듬, + 큐칙 우선순위를 1위로 설정
+### EC2 Auto Scalling 그룹 사용, EC2는 ALB에 있을 때 `postgre`
+= 요청의 경로가 `와일드 카드`와 일치할 때 유지관리 응답을 반환하기위해 ALB에 리스너 규칙만듬, + 규칙 `우선순위를 1위`로 설정
 
+### 와일드 카드
+> 정확한 값 대신, 여러 값을 한번에 매칭시키는 특수문자
+
+- 얘는 인증관련해서 폭 넓게 사용됨
+- 흔한 와일드 카드 : `*`
+ex) *.example.com → a.example.com, api.example.com, dev.example.com 등 매칭
+(단, 보통 example.com 자체는 포함 안 되는 경우가 많습니다)
+
+### AWS 여러 직원의 사용자 이름,비밀번호 검색 및 저장
+= SecretManager + CloudFormaition,BatchGetsecretValue API 사용
+
+### 마이크로 서비스
+= SQS 사용하여 마이크로서비스간 통신
+= Fargate의 ECS컨테이너에 애플리케이션 배포
+
+### S3 + 민감정보
+= Macie + EventBridge와 Macie 통합 + `SNS`
+
+### Lamdba + Java + `고유ID`
+= 스냅샷 후크추가
+= `고유 ID` + 핸들러이동
+
+### Aurora 데이터 베이스 사용회사가 잠재적 손실 최소화 DR 전략
+= Aurora 글로벌로 마이그레이션 + S3버킷 생성 리전간 복제 구성
+= 글로벌은 다중 리전 허용하는것
+
+### 443포트
+= WAF 웹 ACL을 ALB와 연결
+
+-> WAF(=web application firewall)는 HTTP/HTTPS 요청을 대상으로 하는 방화벽, 7계층 보호
+
+-> ACL(=Access Control List)은 허용/거부 규칙목록
+(이건 위에서 다뤘음)
+
+### RDS를 부하 관리는
+= 무조건 `프록시`라고!
+
+### 회사는 테라바이트급 비디오를 처리하며 일부 콘텐츠 차단 + 20분 소요
+= Faget 시작 유형과 ECS 로 마이크로서비스 구현 + S3 Intelligent-Tierings
+
+### 전 서계 수백만 명의 사용자 + S3
+= 무조건 CloudFront 배포
+
+### 로드밸런서 통한 EC2 + Aurora데이터베이스를 탄력적으로
+= Aurora 복제본 추가 + Global Accelerator
+
+### Saas
+= Elastic Volumes 사용하여 입력에 따라
+EBS 볼륨의 크기를 늘리는 Lambda 호출
+
+### EBS + KMS + 암호화키의 순환을 제어할 수 있어야한다.
+= 고객 관리 키를 생성한다. 이키를 사용하여 EBS 볼륨을 암호화
+
+### Microsoft SQL 마이그레이션 시
+= 두개의 가용 영역 + 다중 AZ 배포 사용 RDS 마이그레이션
+
+### RDS 데이터 베이스 + 비밀번호 순환
+= Secrets Manager 비밀번호 저장 + 자동교체 활성화
+
+### IPv4 엑세스 허용
+= NAT 게이트웨이 배포, 프라이빗 서브넷에 대한 `공유경로` 테이블을 만들고 구성
+
+### 여러 가용역역 + 부하경험 + 일부 프라이빗서브넷 + 프라이빗서브넷에 안전한 아웃바운드 연결을 제공하는
+= NAT 게이트웨이 하나씩 배포 + 라우팅테이블 구성하여 아웃바운드 트래픽이 동일 가용여역의 NAT게이트 라우팅
+
+### 비디오 인코딩 + Api GateWay + 테스트 + 백그라운드
+= REST API + 인코딩 처리 Lambda -> 통합
+
+### Linux + EC2 엑세스 필요
+= 모든인스턴스 SSH + IAM 사용 외부엔지니어 제공
+
+### JAva + 온디맨드 EC2
+= 최대 확장 온디맨드 + 30일 후 원시 이미지를 저비용 스토리지 계층 보관
+
+### EKS 노드 최대용량 도달 시
+= 클러스터 자동스케일러 사용 + 노드수 관리
+
+### Rout53과 애플리케이션 로드밸런서 ALB
+= Rout53 상태검사를 구성 자동으로 장애조치 수행
+-> Health Check으로 판단
