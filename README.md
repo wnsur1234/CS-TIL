@@ -64,7 +64,7 @@
 ---
 
 ## AWS
-<!-- 여기 AWS는 그냥 []로 큰폴더 하위 폴더 -들여쓰기로 나눔 -->
+
 - [ThechinicalEssential]
   - [1일차](./TIL-Contents/AWS/thechinicalEssential/aws_thechnical_essential.md)
 - [Architecting]
