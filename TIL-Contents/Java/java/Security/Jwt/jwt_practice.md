@@ -257,4 +257,17 @@ private final JWTUtil jwtUtil;
 
 이렇게 하면 정상적으로 로그인 시도 시 AccessToken과 RefreshToken을 발급 받는 
 Jwt 인증 방식이 구현 됩니다.
-![alt text](../../a_images/jwt_practice.png)
+![alt text](../../../../a_images/jwt_practice.png)
+
+---
+
+### 앞으로 나아가기
+> 로그인을 JWT형식으로 구현하였으나 `프론트와 소통`에서 `swaager`을 활용할 때 따로 api를 만들지 않아 확인이 불가능 했음
+
+[해결방안]
+```
+jwtAuthenticationFilter.setFilterProcessesUrl("/api/login");
+```
+
+위와 같이 로그인 처리를 Security필터에서 처리하였기 때문인데
+따로 Controller에 login 엔드포인트를 명시함에 따라 해당 문제 해결
