@@ -61,6 +61,13 @@
 - [Exception]
   - [Global Exception 처리](TIL-Contents/Java/spring/exception/global_excption_real.md)
 
+### Daily CS
+- [JPA]
+  - [ID 생성](TIL-Contents/Java/Daily_CS/JPA/create_id.md)
+
+### Software
+- [빌드](TIL-Contents/Java/Softweaer/build.md)
+
 ---
 
 ## AWS
@@ -108,6 +115,19 @@
     - [첫 번째 단계](./TIL-Contents/AWS/z_Real_project/Migraition_pratice/first_step.md)
   - [SAA]
     - [이론](./TIL-Contents/AWS/z_Real_project/SAA/theory.md)
+
+---
+
+## 정보처리기사
+
+- [2과목]
+  - [전체 핵심](TIL-Contents/정보처리기사/2과목/전체 핵심.md)
+- [5과목]
+  - [전체 핵심](TIL-Contents/정보처리기사/5과목/전체 핵심.md)
+- [Develop]
+  - [성능개선 깨달음](TIL-Contents/정보처리기사/Develop/성능개선_깨달음.md)
+- [오답노트](TIL-Contents/정보처리기사/오답노트.md)
+
 --- 
 ## ✍ 작성 규칙
 1. 하루 최소 1개 이상 학습 기록
