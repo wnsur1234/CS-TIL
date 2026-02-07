@@ -90,16 +90,16 @@ Sginature를 해싱하기 위한 `알고리즘을 지정` 하는 것이다.
 
 또한 RefreshToken이 생성되고 나면 프론트에도 값을 전달 해주어야 하는데 
 전달 할때 방법은 HttpOnly방식이 가장 안전하다.
-[HttpOnly란?](../../Networks/Cookie/HttpOnly_쿠키.md)
+[HttpOnly란?](../../../../Networks/Cookie/HttpOnly_쿠키.md)
 
 즉
 - Access Token을 통해서만 자원에 접근이 가능, But 유효기간이 매우 짧음(탈취를 당해도 이미 사용할 수 없는 상태)
 - Refresh Token은 유효기간이 길기에 탈취당할 수도 있지만 Refresh Token은 `오직` Access 토큰을 재발급 하는 용도 (Referesh Token 자체로는 별 쓸모가 없음)
 
-![alt text](../../a_images/jwt_theory_1.png)
+![alt text](../../../../a_images/jwt_theory_1.png)
 
 더 간단한 흐름도로 보면 다음과 같음
-![alt text](../../a_images/jwt_theory_2.png)
+![alt text](../../../../a_images/jwt_theory_2.png)
 
 <u>Refresh Token을 사용하여 다음과 같은 이득을 얻을 수 있다.</u>
 - Access Token의 유효기간을 짧게 하여 탈취 방지!
