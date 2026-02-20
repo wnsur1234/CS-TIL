@@ -245,3 +245,4 @@ public class InnerTransactionService {
 // currentTransactionName = server.transaction.InnerTransactionService.inner  
 // actualTransactionActive = true
 이처럼 각각 프록시를 생성할 수 있게 두 클래스로 분리하면 AOP 어드바이스가 적용되어 의도한 대로 독립적인 트랜잭션을 시작할 수 있게 됐습니다.
+
