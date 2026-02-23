@@ -5,6 +5,8 @@
 
 - MySql에서 해당 용어대해서 숙지가 미숙하여 답변 드리기 어렵습니다.
 
+<u>[공부하러가기](/TIL-Contents/Databases/RDB/InnoDB.md)</u> 
+
 ---
 
 ### GPT 답변 (모를때 가정)
