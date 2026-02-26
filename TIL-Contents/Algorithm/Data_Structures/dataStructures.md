@@ -51,7 +51,7 @@
 - 자료구조를 이용한 알고리즘: 문제 해결 절차에서 스택/큐/그래프 등을 활용
 ---
 ### 자료구조의 분류 정리
-![alt text](../a_images/datatStructures_tree.png)
+![alt text](../../a_images/datatStructures_tree.png)
 
 ### 분류: 선형 vs 비선형
 > :arrow_double_up:[Top](#1-data-structure-자료구조)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
