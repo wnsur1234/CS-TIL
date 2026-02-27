@@ -277,7 +277,7 @@ public class Main {
     - 왼쪽 자식 노드 < 부모 노드 < 오른쪽 자식 노드
     - 힙은 왼쪽 노드의 값이 크든 오른쪽 노드의 값이 크든 상관 없다.
     - 힙은 최대/최소 검색을, 이진 탐색 트리는 탐색을 위한 구조이다.
-![alt text](../a_images/BinarySearchTree.png)
+![alt text](../../a_images/BinarySearchTree.png)
 
 ### Heap을 공부하며 생긴 의문
 > :arrow_double_up:[Top](#자료구조-심화-학습-내용)   :leftwards_arrow_with_hook:[Back](https://github.com/wnsur1234/CS-TIL#CS)   :information_source:[Home](https://github.com/wnsur1234/CS-TIL)
@@ -318,3 +318,5 @@ public class Main {
 공통점: 그냥 “heap = 무더기, pile”이라는 말 때문에 이름만 같을 뿐.
 차이점: 전혀 별개. 혼동하면 안 됨.
 ---
+
+## 찐 최종
